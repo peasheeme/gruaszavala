@@ -208,6 +208,22 @@ border:1px solid #DF6209;
 color: #011931;
 }
 
+.btn-enviar2 {
+	background: #DF6209;
+	color: white;
+	border:1px solid #DF6209;
+	border-radius: 30px;
+	padding: 5px 20px;
+	margin: 0 15px 40px 0;
+	width: 120px;
+	}
+
+.btn-enviar2:hover {
+	background: transparent;
+	border:1px solid #DF6209;
+	color: white;
+	}
+
 li, a , button.btn-gruas {
  list-style: none;
 }
@@ -450,6 +466,9 @@ a.contacto {
 	.margen-movil {
 		margin-top: 50px ;
 
+	}
+	h5 {
+		font-size: 16px;
 	}
 }
 
