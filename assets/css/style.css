@@ -207,7 +207,9 @@ background: transparent;
 border:1px solid #DF6209;
 color: #011931;
 }
-
+.btn-enviar:hover, .btn-enviar2:hover , .btn-contacto:hover {
+	outline: none;
+}
 .btn-enviar2 {
 	background: #DF6209;
 	color: white;
@@ -223,7 +225,9 @@ color: #011931;
 	border:1px solid #DF6209;
 	color: white;
 	}
-
+.btn-enviar:hover {
+	outline: none;
+}
 li, a , button.btn-gruas {
  list-style: none;
 }
