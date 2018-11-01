@@ -31,6 +31,16 @@
   logged_in_greeting="Hola! En que podemos ayudarte?"
   logged_out_greeting="Hola! En que podemos ayudarte?">
 </div>
+
+
+    <div id="preloader">
+      <div id="status">
+      
+    
+      </div>
+      </div>
+    
+
   <section class="cabecera">
      <div class="container">
         <div class="row ">
@@ -53,7 +63,6 @@
           <img src="assets/images/icons/logo.png" class="hidden-lg-up logotipo-movil text-right"alt="">
         <label for="btn-menu"> <img  src="assets/images/icons/menu.png">
           <!--<i class="fa fa-bars menu" aria-hidden="true"></i>--></label>
-
         <nav class="menu-responsive navbar navbar-light">
               <a class="navbar-brand hidden-md-down" href="index.html">
                   <img src="assets/images/icons/logo.png" alt="">
@@ -90,13 +99,9 @@
               <h1 class="blanco text-left">Somos la empresa de auxilio vial más importante de Monterrey y su área metropolitana.
             </h1><br>
               <h2 class="text-center"><span class="rotate blanco">  Auxilio vial de vehículos  | Salvamentos | Arrastre | Mudanzas  | Almacen de muebles| Transporte de maquinaria.</span></h2>
-
               <!--<div class="col-xs-12 col-md-12 text-center"> <img class=" row text-center" src="assets/images/icons/telefonodesiempre.png"></div>-->
             </div>
                <!--<img  class="image" src="assets/images/icons/24.png">-->
-
-
-
            </div>
 
            <div class=" COL-XS-12 cotizar col-md-6 col-lg-4  ml-auto">
@@ -563,7 +568,7 @@
 <!-- simpletext rotator -->
 <link rel="stylesheet" href="assets/css/simpletextrotator.min.css">
 <!-- style -->
- <link href="assets/css/style.min.css" rel="stylesheet" media="screen">
+ <link href="assets/css/style.css" rel="stylesheet" media="screen">
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -579,8 +584,8 @@
      <!-- Simple text rotator-->
      <script type="text/javascript" src="assets/js/jquery.simple-text-rotator.min.js"></script>
 
-     <!----------------Custom --------------->
-    <script type="text/javascript" src="assets/js/custom.min.js"></script>
+     <!----------------Custom -----------
+    <script type="text/javascript" src="assets/js/custom.min.js"></script>---->
 
     <script >
 
@@ -599,9 +604,68 @@
 
 });
 
+
+
+  /* --------------------- carousel --------------*/
+  var owl = $('.owl-carousel');
+		 owl.owlCarousel({
+	    loop:true,
+	    margin:10,
+	    autoplay:true,
+	    autoplayTimeout:2000,
+	    autoplayHoverPause:true,
+      responsiveClass:true,
+      responsive : {
+        1 : { items: 1,
+              nav: true
+        },
+        600 : { items: 3 ,
+                nav: false
+        },
+        1000 : { items:4,
+            nav:true,
+            loop:false
+        }
+      }
+	   });
+		$('.play').on('click',function(){
+		    owl.trigger('play.owl.autoplay',[2000])
+		})
+		$('.stop').on('click',function(){
+		    owl.trigger('stop.owl.autoplay')
+		})
+ /*$("#owl-gruas").owlCarousel({
+   items:5,
+            navigation: true,
+            navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+            slideSpeed : 300,
+            paginationSpeed : 400,
+            autoPlay: 5000,
+
+
+        });*/
+
+
+/* --------------------- Simple text rotator--------------*/
+$(".rotate").textrotator({
+            animation: "dissolve",
+            separator: "|",
+            speed: 3000
+        });
+
+
+
+        /*funciòn de la clase actve */
+        $(function(){
+            var botones = $('.tabs button');
+            botones.click(function(){
+                botones.removeClass('activo');
+                $(this).addClass('activo');
+            });
+        });
+ 
+
+
     </script>
-
-
-
   </body>
 </html>

@@ -164,6 +164,38 @@ a.nav-link:hover ,a.nav-link:focus {
 	background-color: #011931;
 	padding: 0 0 70px 0;
 }
+/* ---------------------------------------------- /*
+ * Preloader
+/* ---------------------------------------------- */
+
+#preloader {
+	background: white;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 9999;
+}
+
+#status, .status-mes {
+	background-image: url(../images/preloader.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 400px;
+	left: 45%;
+	margin: -100px 0 0 -100px;
+	position: absolute;
+	top: 40%;
+	width: 400px;
+}
+
+
+.status-mes h4 {
+	color: #222;
+	margin-top: 30px;
+}
+
 /*----------Servicios-----------*/
 .servicios-margen {
 	margin: 20px 0;
