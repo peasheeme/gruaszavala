@@ -585,7 +585,12 @@
 
      <!----------------Custom -----------
     <script type="text/javascript" src="assets/js/custom.min.js"></script>---->
-
+ <script>
+   $(window).load(function() {
+		$('#status').fadeOut();
+		$('#preloader').delay(500).fadeOut('slow');
+	});
+ </script>
     <script >
 
 
